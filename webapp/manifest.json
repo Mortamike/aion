@@ -1,7 +1,7 @@
 {
-    "name": "AiOn",
-    "short_name": "AiOn",
-    "description": "AiOn Familie",
+    "name": "AiOn Web App",
+    "short_name": "AiOn Web App",
+    "description": "AiOn Web App: Einkauf, Woche und Rezepte",
     "lang": "de",
     "start_url": ".",
     "scope": ".",
