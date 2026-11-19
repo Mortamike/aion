@@ -30,10 +30,10 @@
   <main>
     <a class="back" href="./">← AiOn</a>
     <h1>Datenschutzerklärung</h1>
-    <p class="meta">für die App AiOn (LifeOS) · Stand: 8. November 2026</p>
+    <p class="meta">für die App AiOn (LifeOS) · Stand: 19. November 2026</p>
 
     <h2>1. Geltungsbereich</h2>
-    <p>Diese Datenschutzerklärung gilt für die Android-App AiOn (Untertitel „LifeOS“) und für diese Website. AiOn ist ein privates Projekt für den Eigengebrauch und nicht öffentlich erhältlich.</p>
+    <p>Diese Datenschutzerklärung gilt für die Android-App AiOn (Untertitel „LifeOS“), für die Web-App „AiOn Web App“ (Abschnitt 9) und für diese Website. AiOn ist ein privates Projekt für den Eigengebrauch und nicht öffentlich erhältlich.</p>
 
     <h2>2. Verantwortlicher</h2>
     <p>Michael Langner<br>
@@ -73,10 +73,22 @@
       <li>Beim Deinstallieren der App werden die lokal gespeicherten Daten vom Gerät entfernt.</li>
     </ul>
 
-    <h2>9. Diese Website</h2>
-    <p>Diese Website wird über GitHub Pages (GitHub, Inc.) bereitgestellt. GitHub kann beim Aufruf technische Daten wie die IP-Adresse in Server-Logs verarbeiten. Diese Website setzt keine Cookies, lädt keine externen Schriften und verwendet kein Tracking.</p>
+    <h2>9. Web-App „AiOn Web App“</h2>
+    <p>Die Web-App unter <a href="webapp/">mortamike.github.io/aion/webapp/</a> ist für eine eingeladene Person aus dem Haushalt des Verantwortlichen gedacht. Mit ihr lassen sich gemeinsame Einkaufslisten, der Wochenplan und Rezepte im Browser ansehen und bearbeiten.</p>
+    <ul>
+      <li><strong>Anmeldung mit Google:</strong> Die Web-App fragt Name und E-Mail-Adresse ab, um anzuzeigen, mit welchem Konto sie verbunden ist, und die Berechtigung <code>drive.file</code>. Damit kann sie nur die Dateien öffnen, die die Person im Auswahlfenster von Google (Google Picker) selbst auswählt. Auf andere Dateien im Google Drive hat sie keinen Zugriff.</li>
+      <li><strong>Welche Daten:</strong> zwei Tabellen (Listen und Rezepte), die der Verantwortliche in seinem Google Drive angelegt und mit der Person geteilt hat. Was die Person dort einträgt, sehen alle, mit denen die Tabellen geteilt sind, wie bei jeder geteilten Google-Tabelle.</li>
+      <li><strong>Im Browser:</strong> Gespeichert werden nur der Anmeldeschlüssel von Google (gilt etwa eine Stunde, danach ist eine neue Anmeldung mit einem Tipp nötig; es gibt keinen dauerhaften Zugang), die zuletzt verwendete E-Mail-Adresse und die Kennungen der beiden gewählten Tabellen, und zwar im lokalen Speicher (localStorage) des Browsers auf dem Gerät. Noch nicht gesendete Änderungen liegen nur im Arbeitsspeicher der geöffneten Seite. Die Web-App setzt keine Cookies.</li>
+      <li><strong>Kein eigener Server:</strong> Die Web-App spricht direkt mit Google und überträgt keine Daten an den Entwickler.</li>
+      <li><strong>Google-Dienste beim Aufruf:</strong> Für Anmeldung und Auswahlfenster lädt die Web-App Skripte von Google (accounts.google.com, apis.google.com), Programmteile und bei Bedarf Schriften von Google-Servern (www.gstatic.com, fonts.gstatic.com) und liest und schreibt die Tabellen über die Google Sheets API und die Google Drive API. Google erhält dabei technische Daten wie die IP-Adresse.</li>
+      <li><strong>Keine KI in der Web-App:</strong> Die Web-App selbst nutzt keine KI-Dienste. Legt die Person ein Rezept an oder ändert dessen Zutaten, kann die Android-App des Verantwortlichen später Titel, Portionen und Zutaten dieses Rezepts an den dort eingestellten KI-Dienst (Google Gemini API oder OpenRouter) senden, um die Nährwerte zu schätzen. Weitere Angaben aus der Web-App gehen nicht an KI-Dienste.</li>
+      <li><strong>Beenden:</strong> Die Person kann sich in der Web-App abmelden, den Zugriff unter <a href="https://myaccount.google.com/connections">myaccount.google.com/connections</a> widerrufen und die Websitedaten von mortamike.github.io in den Einstellungen des Browsers löschen. Der Verantwortliche kann die Freigabe der Tabellen jederzeit beenden.</li>
+    </ul>
 
-    <h2>10. Kontakt</h2>
+    <h2>10. Diese Website</h2>
+    <p>Diese Website wird über GitHub Pages (GitHub, Inc.) bereitgestellt. GitHub kann beim Aufruf technische Daten wie die IP-Adresse in Server-Logs verarbeiten. Die Startseite und diese Seite setzen keine Cookies, laden keine externen Schriften und verwenden kein Tracking. Für die Web-App gilt zusätzlich Abschnitt 9.</p>
+
+    <h2>11. Kontakt</h2>
     <p>Fragen zum Datenschutz bitte an die oben genannte E-Mail-Adresse.</p>
   </main>
 </body>
